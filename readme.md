@@ -26,7 +26,7 @@ pip3 install -r requirements.txt
 
 6 - O valor FIPE é informado em tela.
 
-Siga as instruções conforme forem aparecendo em tela.
+Siga as instruções conforme aparecem em tela.
 
 ## Licença
 [MIT](https://choosealicense.com/licenses/mit/)
