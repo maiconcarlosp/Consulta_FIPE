@@ -10,6 +10,7 @@ try:
         
         if len(tabela) > 1:
             salvo = input('Deseja pesquisar um veículo salvo? (y/n)')
+            salvo = salvo.lower()
         else:
             salvo = 'n'
             
@@ -105,6 +106,7 @@ else:
 
 if salvo != 'y' and veiculo_contem == 0:
     salvar = input('Salvar esse veículo? (y/n)')
+    salvar = salvar.lower()
 else:
     salvar = 'n'
 
@@ -114,7 +116,7 @@ if salvar == 'y':
     w = csv.writer(file)
 
     if cont == 0:
-        w.writerow(['INDICE', 'NOME', 'MARCA', 'VEICULO', 'VERSAO', 'PREÇO'])
+        w.writerow(['ÍNDICE', 'NOME', 'MARCA', 'VEÍCULO', 'VERSÃO', 'PREÇO'])
         cont = 1
     w.writerow([cont, nome, marca, veiculo, versao, resultado['preco']])
 
